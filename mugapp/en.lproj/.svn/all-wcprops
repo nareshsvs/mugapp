@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Handhelds/!svn/ver/3512/iPhone/tools/mugapp/mugapp/en.lproj
+END
+InfoPlist.strings
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Handhelds/!svn/ver/3506/iPhone/tools/mugapp/mugapp/en.lproj/InfoPlist.strings
+END
+MUGViewController_iPad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Handhelds/!svn/ver/3506/iPhone/tools/mugapp/mugapp/en.lproj/MUGViewController_iPad.xib
+END
+MUGViewController_iPhone.xib
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Handhelds/!svn/ver/3512/iPhone/tools/mugapp/mugapp/en.lproj/MUGViewController_iPhone.xib
+END

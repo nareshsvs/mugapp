@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		125EF12D15495CEE00DEF725 /* MUGEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 125EF12C15495CEE00DEF725 /* MUGEvent.m */; };
+		125EF13015495CFC00DEF725 /* MUGFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 125EF12F15495CFB00DEF725 /* MUGFeed.m */; };
+		12B86B88154965DE00E84621 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B86B81154965DE00E84621 /* FMDatabase.m */; };
+		12B86B89154965DF00E84621 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B86B83154965DE00E84621 /* FMDatabaseAdditions.m */; };
+		12B86B8A154965DF00E84621 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B86B85154965DE00E84621 /* FMResultSet.m */; };
+		12B86B90154966B300E84621 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B86B8F154966B300E84621 /* libsqlite3.dylib */; };
+		12B86B95154967D500E84621 /* DBSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B86B92154967D500E84621 /* DBSchema.m */; };
+		12B86B9915496B6800E84621 /* MUGEventDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B86B9815496B6800E84621 /* MUGEventDao.m */; };
+		12B86B9C15496F3900E84621 /* SQLiteMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B86B9B15496F3900E84621 /* SQLiteMgr.m */; };
+		12B86BA0154991E700E84621 /* MUGEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B86B9F154991E700E84621 /* MUGEventManager.m */; };
+		12B86BAC154999B800E84621 /* FBGraphUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B86BAB154999B800E84621 /* FBGraphUtils.m */; };
+		12B86BBB1549BFC200E84621 /* MUGUserProfileDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B86BBA1549BFC200E84621 /* MUGUserProfileDao.m */; };
+		12B86BBE1549C5FF00E84621 /* FBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B86BBD1549C5FF00E84621 /* FBDataManager.m */; };
+		12B86BC11549C82900E84621 /* MUGDefaultURLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B86BC01549C82900E84621 /* MUGDefaultURLDelegate.m */; };
+		12D74EA815480C48009A35BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D74EA715480C48009A35BF /* UIKit.framework */; };
+		12D74EAA15480C48009A35BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D74EA915480C48009A35BF /* Foundation.framework */; };
+		12D74EAC15480C48009A35BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D74EAB15480C48009A35BF /* CoreGraphics.framework */; };
+		12D74EB215480C48009A35BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12D74EB015480C48009A35BF /* InfoPlist.strings */; };
+		12D74EB415480C48009A35BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D74EB315480C48009A35BF /* main.m */; };
+		12D74EB815480C48009A35BF /* MUGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D74EB715480C48009A35BF /* MUGAppDelegate.m */; };
+		12D74EBB15480C48009A35BF /* MUGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D74EBA15480C48009A35BF /* MUGViewController.m */; };
+		12D74EBE15480C48009A35BF /* MUGViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D74EBC15480C48009A35BF /* MUGViewController_iPhone.xib */; };
+		12D74EC115480C48009A35BF /* MUGViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D74EBF15480C48009A35BF /* MUGViewController_iPad.xib */; };
+		12D74EC915480C49009A35BF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D74EC815480C49009A35BF /* SenTestingKit.framework */; };
+		12D74ECA15480C49009A35BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D74EA715480C48009A35BF /* UIKit.framework */; };
+		12D74ECB15480C49009A35BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D74EA915480C48009A35BF /* Foundation.framework */; };
+		12D74ED315480C49009A35BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12D74ED115480C49009A35BF /* InfoPlist.strings */; };
+		12D74ED615480C49009A35BF /* mugappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D74ED515480C49009A35BF /* mugappTests.m */; };
+		12D74EEF15480D90009A35BF /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 12D74EE215480D90009A35BF /* FBDialog.bundle */; };
+		12D74EF015480D90009A35BF /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D74EE815480D90009A35BF /* libfacebook_ios_sdk.a */; };
+		12D74F1815482A88009A35BF /* SummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D74F1715482A88009A35BF /* SummaryView.xib */; };
+		12D74F1A15482AFB009A35BF /* EventListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D74F1915482AFB009A35BF /* EventListView.xib */; };
+		12D74F1C15482B11009A35BF /* FeedsListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D74F1B15482B11009A35BF /* FeedsListView.xib */; };
+		12D74F22154840C7009A35BF /* EventDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D74F21154840C7009A35BF /* EventDetail.xib */; };
+		12D74F3215484932009A35BF /* MUGSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D74F3115484931009A35BF /* MUGSummaryViewController.m */; };
+		12D74F3515484943009A35BF /* MUGFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D74F3415484943009A35BF /* MUGFeedsViewController.m */; };
+		12D74F3815484953009A35BF /* MUGEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D74F3715484953009A35BF /* MUGEventsViewController.m */; };
+		12D74F3B15484961009A35BF /* MUGEventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D74F3A15484961009A35BF /* MUGEventDetailsViewController.m */; };
+		12D74F3E154876DD009A35BF /* MUGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D74F3D154876DD009A35BF /* MUGAppUtils.m */; };
+		606051CE154A6E4100B3453D /* mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 606051CD154A6E4100B3453D /* mug.png */; };
+		606051D0154AA35200B3453D /* mug_app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 606051CF154AA35200B3453D /* mug_app_icon.png */; };
+		606051E3154ABA9500B3453D /* button_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 606051E1154ABA9500B3453D /* button_normal.png */; };
+		606051E4154ABA9500B3453D /* button_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 606051E2154ABA9500B3453D /* button_selected.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12D74ECC15480C49009A35BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12D74E9A15480C48009A35BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12D74EA215480C48009A35BF;
+			remoteInfo = mugapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		125EF12B15495CEE00DEF725 /* MUGEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGEvent.h; sourceTree = "<group>"; };
+		125EF12C15495CEE00DEF725 /* MUGEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGEvent.m; sourceTree = "<group>"; };
+		125EF12E15495CFB00DEF725 /* MUGFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGFeed.h; sourceTree = "<group>"; };
+		125EF12F15495CFB00DEF725 /* MUGFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGFeed.m; sourceTree = "<group>"; };
+		12B86B80154965DE00E84621 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		12B86B81154965DE00E84621 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		12B86B82154965DE00E84621 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		12B86B83154965DE00E84621 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		12B86B84154965DE00E84621 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		12B86B85154965DE00E84621 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		12B86B8F154966B300E84621 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		12B86B91154967D500E84621 /* DBSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSchema.h; sourceTree = "<group>"; };
+		12B86B92154967D500E84621 /* DBSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSchema.m; sourceTree = "<group>"; };
+		12B86B9715496B6800E84621 /* MUGEventDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGEventDao.h; sourceTree = "<group>"; };
+		12B86B9815496B6800E84621 /* MUGEventDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGEventDao.m; sourceTree = "<group>"; };
+		12B86B9A15496F3900E84621 /* SQLiteMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteMgr.h; sourceTree = "<group>"; };
+		12B86B9B15496F3900E84621 /* SQLiteMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteMgr.m; sourceTree = "<group>"; };
+		12B86B9E154991E700E84621 /* MUGEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGEventManager.h; sourceTree = "<group>"; };
+		12B86B9F154991E700E84621 /* MUGEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGEventManager.m; sourceTree = "<group>"; };
+		12B86BAA154999B800E84621 /* FBGraphUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBGraphUtils.h; sourceTree = "<group>"; };
+		12B86BAB154999B800E84621 /* FBGraphUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBGraphUtils.m; sourceTree = "<group>"; };
+		12B86BB91549BFC200E84621 /* MUGUserProfileDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGUserProfileDao.h; sourceTree = "<group>"; };
+		12B86BBA1549BFC200E84621 /* MUGUserProfileDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGUserProfileDao.m; sourceTree = "<group>"; };
+		12B86BBC1549C5FF00E84621 /* FBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDataManager.h; sourceTree = "<group>"; };
+		12B86BBD1549C5FF00E84621 /* FBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDataManager.m; sourceTree = "<group>"; };
+		12B86BBF1549C82900E84621 /* MUGDefaultURLDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGDefaultURLDelegate.h; sourceTree = "<group>"; };
+		12B86BC01549C82900E84621 /* MUGDefaultURLDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGDefaultURLDelegate.m; sourceTree = "<group>"; };
+		12B86BC21549C8AE00E84621 /* MUGConnectionEventProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUGConnectionEventProtocol.h; sourceTree = "<group>"; };
+		12D74EA315480C48009A35BF /* mugapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mugapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D74EA715480C48009A35BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		12D74EA915480C48009A35BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12D74EAB15480C48009A35BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		12D74EAF15480C48009A35BF /* mugapp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mugapp-Info.plist"; sourceTree = "<group>"; };
+		12D74EB115480C48009A35BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12D74EB315480C48009A35BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12D74EB515480C48009A35BF /* mugapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mugapp-Prefix.pch"; sourceTree = "<group>"; };
+		12D74EB615480C48009A35BF /* MUGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUGAppDelegate.h; sourceTree = "<group>"; };
+		12D74EB715480C48009A35BF /* MUGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUGAppDelegate.m; sourceTree = "<group>"; };
+		12D74EB915480C48009A35BF /* MUGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUGViewController.h; sourceTree = "<group>"; };
+		12D74EBA15480C48009A35BF /* MUGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUGViewController.m; sourceTree = "<group>"; };
+		12D74EBD15480C48009A35BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MUGViewController_iPhone.xib; sourceTree = "<group>"; };
+		12D74EC015480C48009A35BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MUGViewController_iPad.xib; sourceTree = "<group>"; };
+		12D74EC715480C49009A35BF /* mugappTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mugappTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D74EC815480C49009A35BF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		12D74ED015480C49009A35BF /* mugappTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mugappTests-Info.plist"; sourceTree = "<group>"; };
+		12D74ED215480C49009A35BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12D74ED415480C49009A35BF /* mugappTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mugappTests.h; sourceTree = "<group>"; };
+		12D74ED515480C49009A35BF /* mugappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mugappTests.m; sourceTree = "<group>"; };
+		12D74EE015480D90009A35BF /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		12D74EE115480D90009A35BF /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		12D74EE215480D90009A35BF /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		12D74EE315480D90009A35BF /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		12D74EE415480D90009A35BF /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
+		12D74EE515480D90009A35BF /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		12D74EE615480D90009A35BF /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		12D74EE715480D90009A35BF /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		12D74EE815480D90009A35BF /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		12D74EE915480D90009A35BF /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		12D74EEA15480D90009A35BF /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		12D74EEB15480D90009A35BF /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		12D74EEC15480D90009A35BF /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		12D74EED15480D90009A35BF /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		12D74EEE15480D90009A35BF /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		12D74F1715482A88009A35BF /* SummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryView.xib; sourceTree = "<group>"; };
+		12D74F1915482AFB009A35BF /* EventListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventListView.xib; sourceTree = "<group>"; };
+		12D74F1B15482B11009A35BF /* FeedsListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedsListView.xib; sourceTree = "<group>"; };
+		12D74F21154840C7009A35BF /* EventDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetail.xib; sourceTree = "<group>"; };
+		12D74F3015484931009A35BF /* MUGSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGSummaryViewController.h; sourceTree = "<group>"; };
+		12D74F3115484931009A35BF /* MUGSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGSummaryViewController.m; sourceTree = "<group>"; };
+		12D74F3315484943009A35BF /* MUGFeedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGFeedsViewController.h; sourceTree = "<group>"; };
+		12D74F3415484943009A35BF /* MUGFeedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGFeedsViewController.m; sourceTree = "<group>"; };
+		12D74F3615484953009A35BF /* MUGEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGEventsViewController.h; sourceTree = "<group>"; };
+		12D74F3715484953009A35BF /* MUGEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGEventsViewController.m; sourceTree = "<group>"; };
+		12D74F3915484961009A35BF /* MUGEventDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGEventDetailsViewController.h; sourceTree = "<group>"; };
+		12D74F3A15484961009A35BF /* MUGEventDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGEventDetailsViewController.m; sourceTree = "<group>"; };
+		12D74F3C154876DD009A35BF /* MUGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGAppUtils.h; sourceTree = "<group>"; };
+		12D74F3D154876DD009A35BF /* MUGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGAppUtils.m; sourceTree = "<group>"; };
+		606051CD154A6E4100B3453D /* mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mug.png; path = images/mug.png; sourceTree = SOURCE_ROOT; };
+		606051CF154AA35200B3453D /* mug_app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mug_app_icon.png; path = images/mug_app_icon.png; sourceTree = SOURCE_ROOT; };
+		606051E1154ABA9500B3453D /* button_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_normal.png; path = images/button_normal.png; sourceTree = SOURCE_ROOT; };
+		606051E2154ABA9500B3453D /* button_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_selected.png; path = images/button_selected.png; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12D74EA015480C48009A35BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12B86B90154966B300E84621 /* libsqlite3.dylib in Frameworks */,
+				12D74EA815480C48009A35BF /* UIKit.framework in Frameworks */,
+				12D74EAA15480C48009A35BF /* Foundation.framework in Frameworks */,
+				12D74EAC15480C48009A35BF /* CoreGraphics.framework in Frameworks */,
+				12D74EF015480D90009A35BF /* libfacebook_ios_sdk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D74EC315480C49009A35BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D74EC915480C49009A35BF /* SenTestingKit.framework in Frameworks */,
+				12D74ECA15480C49009A35BF /* UIKit.framework in Frameworks */,
+				12D74ECB15480C49009A35BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		125EF12A15495CD400DEF725 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				125EF12B15495CEE00DEF725 /* MUGEvent.h */,
+				125EF12C15495CEE00DEF725 /* MUGEvent.m */,
+				125EF12E15495CFB00DEF725 /* MUGFeed.h */,
+				125EF12F15495CFB00DEF725 /* MUGFeed.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		12B86B7F154965DE00E84621 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				12B86B80154965DE00E84621 /* FMDatabase.h */,
+				12B86B81154965DE00E84621 /* FMDatabase.m */,
+				12B86B82154965DE00E84621 /* FMDatabaseAdditions.h */,
+				12B86B83154965DE00E84621 /* FMDatabaseAdditions.m */,
+				12B86B84154965DE00E84621 /* FMResultSet.h */,
+				12B86B85154965DE00E84621 /* FMResultSet.m */,
+			);
+			path = sqlite;
+			sourceTree = "<group>";
+		};
+		12B86B8D154965F400E84621 /* dao */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = dao;
+			sourceTree = "<group>";
+		};
+		12B86B8E1549663B00E84621 /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				12B86B9A15496F3900E84621 /* SQLiteMgr.h */,
+				12B86B9B15496F3900E84621 /* SQLiteMgr.m */,
+				12B86B91154967D500E84621 /* DBSchema.h */,
+				12B86B92154967D500E84621 /* DBSchema.m */,
+				12B86B9715496B6800E84621 /* MUGEventDao.h */,
+				12B86B9815496B6800E84621 /* MUGEventDao.m */,
+				12B86BB91549BFC200E84621 /* MUGUserProfileDao.h */,
+				12B86BBA1549BFC200E84621 /* MUGUserProfileDao.m */,
+			);
+			name = dao;
+			sourceTree = "<group>";
+		};
+		12B86B9D15498F5F00E84621 /* EventMgr */ = {
+			isa = PBXGroup;
+			children = (
+				12B86B9E154991E700E84621 /* MUGEventManager.h */,
+				12B86B9F154991E700E84621 /* MUGEventManager.m */,
+			);
+			name = EventMgr;
+			sourceTree = "<group>";
+		};
+		12B86BA1154994BE00E84621 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				12B86BA6154995EE00E84621 /* Requests */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		12B86BA6154995EE00E84621 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				12B86BAA154999B800E84621 /* FBGraphUtils.h */,
+				12B86BAB154999B800E84621 /* FBGraphUtils.m */,
+				12B86BBC1549C5FF00E84621 /* FBDataManager.h */,
+				12B86BBD1549C5FF00E84621 /* FBDataManager.m */,
+				12B86BBF1549C82900E84621 /* MUGDefaultURLDelegate.h */,
+				12B86BC01549C82900E84621 /* MUGDefaultURLDelegate.m */,
+				12B86BC21549C8AE00E84621 /* MUGConnectionEventProtocol.h */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		12D74E9815480C48009A35BF = {
+			isa = PBXGroup;
+			children = (
+				12B86B8F154966B300E84621 /* libsqlite3.dylib */,
+				12B86B8D154965F400E84621 /* dao */,
+				12B86B7F154965DE00E84621 /* sqlite */,
+				12D74EDF15480D90009A35BF /* facebook-ios-sdk */,
+				12D74EAD15480C48009A35BF /* mugapp */,
+				12D74ECE15480C49009A35BF /* mugappTests */,
+				12D74EA615480C48009A35BF /* Frameworks */,
+				12D74EA415480C48009A35BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12D74EA415480C48009A35BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12D74EA315480C48009A35BF /* mugapp.app */,
+				12D74EC715480C49009A35BF /* mugappTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12D74EA615480C48009A35BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12D74EA715480C48009A35BF /* UIKit.framework */,
+				12D74EA915480C48009A35BF /* Foundation.framework */,
+				12D74EAB15480C48009A35BF /* CoreGraphics.framework */,
+				12D74EC815480C49009A35BF /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12D74EAD15480C48009A35BF /* mugapp */ = {
+			isa = PBXGroup;
+			children = (
+				12D74EF315481FBA009A35BF /* shared */,
+				12D74EF2154811FD009A35BF /* ipad */,
+				12D74EF1154811F3009A35BF /* iphone */,
+				12D74EB615480C48009A35BF /* MUGAppDelegate.h */,
+				12D74EB715480C48009A35BF /* MUGAppDelegate.m */,
+				12D74EB915480C48009A35BF /* MUGViewController.h */,
+				12D74EBA15480C48009A35BF /* MUGViewController.m */,
+				12D74EBC15480C48009A35BF /* MUGViewController_iPhone.xib */,
+				12D74EBF15480C48009A35BF /* MUGViewController_iPad.xib */,
+				12D74EAE15480C48009A35BF /* Supporting Files */,
+			);
+			path = mugapp;
+			sourceTree = "<group>";
+		};
+		12D74EAE15480C48009A35BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12D74EAF15480C48009A35BF /* mugapp-Info.plist */,
+				12D74EB015480C48009A35BF /* InfoPlist.strings */,
+				12D74EB315480C48009A35BF /* main.m */,
+				12D74EB515480C48009A35BF /* mugapp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12D74ECE15480C49009A35BF /* mugappTests */ = {
+			isa = PBXGroup;
+			children = (
+				12D74ED415480C49009A35BF /* mugappTests.h */,
+				12D74ED515480C49009A35BF /* mugappTests.m */,
+				12D74ECF15480C49009A35BF /* Supporting Files */,
+			);
+			path = mugappTests;
+			sourceTree = "<group>";
+		};
+		12D74ECF15480C49009A35BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12D74ED015480C49009A35BF /* mugappTests-Info.plist */,
+				12D74ED115480C49009A35BF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12D74EDF15480D90009A35BF /* facebook-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				12D74EE015480D90009A35BF /* Facebook.h */,
+				12D74EE115480D90009A35BF /* FBConnect.h */,
+				12D74EE215480D90009A35BF /* FBDialog.bundle */,
+				12D74EE315480D90009A35BF /* FBDialog.h */,
+				12D74EE415480D90009A35BF /* FBFrictionlessRequestSettings.h */,
+				12D74EE515480D90009A35BF /* FBLoginDialog.h */,
+				12D74EE615480D90009A35BF /* FBRequest.h */,
+				12D74EE715480D90009A35BF /* JSON.h */,
+				12D74EE815480D90009A35BF /* libfacebook_ios_sdk.a */,
+				12D74EE915480D90009A35BF /* NSObject+SBJSON.h */,
+				12D74EEA15480D90009A35BF /* NSString+SBJSON.h */,
+				12D74EEB15480D90009A35BF /* SBJSON.h */,
+				12D74EEC15480D90009A35BF /* SBJsonBase.h */,
+				12D74EED15480D90009A35BF /* SBJsonParser.h */,
+				12D74EEE15480D90009A35BF /* SBJsonWriter.h */,
+			);
+			path = "facebook-ios-sdk";
+			sourceTree = "<group>";
+		};
+		12D74EF1154811F3009A35BF /* iphone */ = {
+			isa = PBXGroup;
+			children = (
+				12D74F1715482A88009A35BF /* SummaryView.xib */,
+				12D74F1915482AFB009A35BF /* EventListView.xib */,
+				12D74F1B15482B11009A35BF /* FeedsListView.xib */,
+				12D74F21154840C7009A35BF /* EventDetail.xib */,
+				12D74F3015484931009A35BF /* MUGSummaryViewController.h */,
+				12D74F3115484931009A35BF /* MUGSummaryViewController.m */,
+				12D74F3315484943009A35BF /* MUGFeedsViewController.h */,
+				12D74F3415484943009A35BF /* MUGFeedsViewController.m */,
+				12D74F3615484953009A35BF /* MUGEventsViewController.h */,
+				12D74F3715484953009A35BF /* MUGEventsViewController.m */,
+				12D74F3915484961009A35BF /* MUGEventDetailsViewController.h */,
+				12D74F3A15484961009A35BF /* MUGEventDetailsViewController.m */,
+			);
+			name = iphone;
+			sourceTree = "<group>";
+		};
+		12D74EF2154811FD009A35BF /* ipad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ipad;
+			sourceTree = "<group>";
+		};
+		12D74EF315481FBA009A35BF /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				12B86BA1154994BE00E84621 /* network */,
+				12B86B9D15498F5F00E84621 /* EventMgr */,
+				12B86B8E1549663B00E84621 /* dao */,
+				125EF12A15495CD400DEF725 /* models */,
+				12D74EF415481FC8009A35BF /* images */,
+				12D74F3C154876DD009A35BF /* MUGAppUtils.h */,
+				12D74F3D154876DD009A35BF /* MUGAppUtils.m */,
+			);
+			name = shared;
+			sourceTree = "<group>";
+		};
+		12D74EF415481FC8009A35BF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				606051E1154ABA9500B3453D /* button_normal.png */,
+				606051E2154ABA9500B3453D /* button_selected.png */,
+				606051CF154AA35200B3453D /* mug_app_icon.png */,
+				606051CD154A6E4100B3453D /* mug.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12D74EA215480C48009A35BF /* mugapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D74ED915480C49009A35BF /* Build configuration list for PBXNativeTarget "mugapp" */;
+			buildPhases = (
+				12D74E9F15480C48009A35BF /* Sources */,
+				12D74EA015480C48009A35BF /* Frameworks */,
+				12D74EA115480C48009A35BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mugapp;
+			productName = mugapp;
+			productReference = 12D74EA315480C48009A35BF /* mugapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12D74EC615480C49009A35BF /* mugappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D74EDC15480C49009A35BF /* Build configuration list for PBXNativeTarget "mugappTests" */;
+			buildPhases = (
+				12D74EC215480C49009A35BF /* Sources */,
+				12D74EC315480C49009A35BF /* Frameworks */,
+				12D74EC415480C49009A35BF /* Resources */,
+				12D74EC515480C49009A35BF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12D74ECD15480C49009A35BF /* PBXTargetDependency */,
+			);
+			name = mugappTests;
+			productName = mugappTests;
+			productReference = 12D74EC715480C49009A35BF /* mugappTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12D74E9A15480C48009A35BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MUG;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 12D74E9D15480C48009A35BF /* Build configuration list for PBXProject "mugapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 12D74E9815480C48009A35BF;
+			productRefGroup = 12D74EA415480C48009A35BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12D74EA215480C48009A35BF /* mugapp */,
+				12D74EC615480C49009A35BF /* mugappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12D74EA115480C48009A35BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D74EB215480C48009A35BF /* InfoPlist.strings in Resources */,
+				12D74EBE15480C48009A35BF /* MUGViewController_iPhone.xib in Resources */,
+				12D74EC115480C48009A35BF /* MUGViewController_iPad.xib in Resources */,
+				12D74EEF15480D90009A35BF /* FBDialog.bundle in Resources */,
+				12D74F1815482A88009A35BF /* SummaryView.xib in Resources */,
+				12D74F1A15482AFB009A35BF /* EventListView.xib in Resources */,
+				12D74F1C15482B11009A35BF /* FeedsListView.xib in Resources */,
+				12D74F22154840C7009A35BF /* EventDetail.xib in Resources */,
+				606051CE154A6E4100B3453D /* mug.png in Resources */,
+				606051D0154AA35200B3453D /* mug_app_icon.png in Resources */,
+				606051E3154ABA9500B3453D /* button_normal.png in Resources */,
+				606051E4154ABA9500B3453D /* button_selected.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D74EC415480C49009A35BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D74ED315480C49009A35BF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12D74EC515480C49009A35BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12D74E9F15480C48009A35BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D74EB415480C48009A35BF /* main.m in Sources */,
+				12D74EB815480C48009A35BF /* MUGAppDelegate.m in Sources */,
+				12D74EBB15480C48009A35BF /* MUGViewController.m in Sources */,
+				12D74F3215484932009A35BF /* MUGSummaryViewController.m in Sources */,
+				12D74F3515484943009A35BF /* MUGFeedsViewController.m in Sources */,
+				12D74F3815484953009A35BF /* MUGEventsViewController.m in Sources */,
+				12D74F3B15484961009A35BF /* MUGEventDetailsViewController.m in Sources */,
+				12D74F3E154876DD009A35BF /* MUGAppUtils.m in Sources */,
+				125EF12D15495CEE00DEF725 /* MUGEvent.m in Sources */,
+				125EF13015495CFC00DEF725 /* MUGFeed.m in Sources */,
+				12B86B88154965DE00E84621 /* FMDatabase.m in Sources */,
+				12B86B89154965DF00E84621 /* FMDatabaseAdditions.m in Sources */,
+				12B86B8A154965DF00E84621 /* FMResultSet.m in Sources */,
+				12B86B95154967D500E84621 /* DBSchema.m in Sources */,
+				12B86B9915496B6800E84621 /* MUGEventDao.m in Sources */,
+				12B86B9C15496F3900E84621 /* SQLiteMgr.m in Sources */,
+				12B86BA0154991E700E84621 /* MUGEventManager.m in Sources */,
+				12B86BAC154999B800E84621 /* FBGraphUtils.m in Sources */,
+				12B86BBB1549BFC200E84621 /* MUGUserProfileDao.m in Sources */,
+				12B86BBE1549C5FF00E84621 /* FBDataManager.m in Sources */,
+				12B86BC11549C82900E84621 /* MUGDefaultURLDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D74EC215480C49009A35BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D74ED615480C49009A35BF /* mugappTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12D74ECD15480C49009A35BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12D74EA215480C48009A35BF /* mugapp */;
+			targetProxy = 12D74ECC15480C49009A35BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12D74EB015480C48009A35BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D74EB115480C48009A35BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12D74EBC15480C48009A35BF /* MUGViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D74EBD15480C48009A35BF /* en */,
+			);
+			name = MUGViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		12D74EBF15480C48009A35BF /* MUGViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D74EC015480C48009A35BF /* en */,
+			);
+			name = MUGViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		12D74ED115480C49009A35BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D74ED215480C49009A35BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12D74ED715480C49009A35BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12D74ED815480C49009A35BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12D74EDA15480C49009A35BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mugapp/mugapp-Prefix.pch";
+				INFOPLIST_FILE = "mugapp/mugapp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/facebook-ios-sdk\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		12D74EDB15480C49009A35BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mugapp/mugapp-Prefix.pch";
+				INFOPLIST_FILE = "mugapp/mugapp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/facebook-ios-sdk\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		12D74EDD15480C49009A35BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mugapp.app/mugapp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mugapp/mugapp-Prefix.pch";
+				INFOPLIST_FILE = "mugappTests/mugappTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		12D74EDE15480C49009A35BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mugapp.app/mugapp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mugapp/mugapp-Prefix.pch";
+				INFOPLIST_FILE = "mugappTests/mugappTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D74E9D15480C48009A35BF /* Build configuration list for PBXProject "mugapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D74ED715480C49009A35BF /* Debug */,
+				12D74ED815480C49009A35BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12D74ED915480C49009A35BF /* Build configuration list for PBXNativeTarget "mugapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D74EDA15480C49009A35BF /* Debug */,
+				12D74EDB15480C49009A35BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12D74EDC15480C49009A35BF /* Build configuration list for PBXNativeTarget "mugappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D74EDD15480C49009A35BF /* Debug */,
+				12D74EDE15480C49009A35BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12D74E9A15480C48009A35BF /* Project object */;
+}
